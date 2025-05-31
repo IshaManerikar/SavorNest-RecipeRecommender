@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavorNest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-overlay">
+    <div class="container">
+      <h1 class="brand-heading">SavorNest</h1>
+      <div class="form-container">
+        <div class="form-field">
+          <label>Ingredients (comma-separated)</label>
+          <input type="text" id="ingredients" placeholder="e.g., tomato, onion, garlic">
+        </div>
+        <div class="form-field">
+          <label>Taste Preference</label>
+          <select id="taste">
+            <option value="">Select a taste</option>
+            <option value="sweet">Sweet</option>
+            <option value="sour">Sour</option>
+            <option value="spicy">Spicy</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Course</label>
+          <select id="course">
+            <option value="">Select a course</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snack">Snack</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Dietary Preference</label>
+          <select id="dietary">
+            <option value="">Select a preference</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+          </select>
+        </div>
+        <button onclick="getRecommendations()">Get Recipes</button>
+      </div>
+      <div id="results"></div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
