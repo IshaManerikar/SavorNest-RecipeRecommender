@@ -1,0 +1,1 @@
+A personalized Recipe Recommender system that suggests dishes based on user preferences, available ingredients, and dietary choices. It helps users discover new recipes, reduce food waste by utilizing what’s on hand, and save time in meal planning.
